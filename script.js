@@ -30,5 +30,5 @@ function handleCalculateBmi() {
 }
 
 function handleReload() {
-  window.location.handleReload();
+  window.location.reload();
 }
