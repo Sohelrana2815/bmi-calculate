@@ -21,11 +21,11 @@ function handleCalculateBmi() {
   document.getElementById("bmi").innerHTML = bmi.toFixed(2);
 
   if (bmi >= 18.5 && bmi <= 24.9) {
-    document.getElementById("message").innerHTML = "You are Healthy";
+    document.getElementById("message").innerHTML = "You are Healthy 😀";
   } else if (bmi >= 25 && bmi < 29.9) {
-    document.getElementById("message").innerHTML = "You are Over Weight";
+    document.getElementById("message").innerHTML = "You are Over Weight 🥲 ";
   } else {
-    document.getElementById("message").innerHTML = "You are Obese";
+    document.getElementById("message").innerHTML = "You are Obese 😭";
   }
 }
 
