@@ -5,21 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI Calculator</title>
   </head>
-  <body style="background-color: antiquewhite;">
+  <body style="background-color: antiquewhite">
     <h1 style="color: blue; text-align: center">Check Your Bmi Now</h1>
-    <label for="weight">Weight(kg)</label>
-    <input type="number" name="weight" id="weight" />
-    <br />
-    <br />
-    <label for="height">Height(m)</label>
-    <input type="number" name="height" id="height" />
-    <br />
-    <br />
-    <h1 id="heading"></h1>
-    <p id="bmi"></p>
-    <p id="message"></p>
-    <button onclick="handleCalculateBmi()">Submit</button>
-    <button onclick="handleReload()">Clear</button>
+    <div style="text-align: center">
+      <label style="font-size: x-large" for="weight">Weight(kg)</label>
+      <input
+        style="font-size: x-large"
+        type="number"
+        name="weight"
+        id="weight"
+      />
+      <br />
+      <br />
+      <label style="font-size: x-large" for="height">Height(m)</label>
+      <input
+        style="font-size: x-large"
+        type="number"
+        name="height"
+        id="height"
+      />
+      <br />
+      <br />
+      <h1 style="font-size: x-large" id="heading"></h1>
+      <p style="font-size: x-large" id="bmi"></p>
+      <p style="font-size: x-large" id="message"></p>
+      <button style="font-size: x-large" onclick="handleCalculateBmi()">
+        Submit
+      </button>
+      <button style="font-size: x-large" onclick="handleReload()">Clear</button>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
