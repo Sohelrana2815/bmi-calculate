@@ -34,7 +34,7 @@ function handleInch() {
   let inch = document.getElementById("inch").value;
   let calculate = inch * 0.0254;
   document.getElementById("inch-meter").innerHTML = "Your height in meter is:";
-  document.getElementById("calculate").innerHTML = calculate;
+  document.getElementById("calculate").innerHTML = calculate.toFixed(2)
 }
 
 function handleReload() {
