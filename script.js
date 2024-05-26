@@ -22,11 +22,19 @@ function handleCalculateBmi() {
 
   if (bmi >= 18.5 && bmi <= 24.9) {
     document.getElementById("message").innerHTML = "You are Healthy 😀";
+  } else if (bmi < 18.5) {
+    document.getElementById("message").innerHTML = "You are under weight 😒";
   } else if (bmi >= 25 && bmi < 29.9) {
     document.getElementById("message").innerHTML = "You are Over Weight 🥲 ";
   } else {
-    document.getElementById("message").innerHTML = "You are Obese 😭";
+    document.getElementById("message").innerHTML = "You are Obese 😭 ";
   }
+}
+function handleInch() {
+  let inch = document.getElementById("inch").value;
+  let calculate = inch * 0.0254;
+  document.getElementById("inch-meter").innerHTML = "Your height in meter is:";
+  document.getElementById("calculate").innerHTML = calculate;
 }
 
 function handleReload() {
